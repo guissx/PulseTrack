@@ -1,0 +1,38 @@
+# Ambiente virtual
+venv/
+.env
+.env.test
+*.env
+
+# Banco SQLite (produção ou testes)
+*.db
+*.sqlite3
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Arquivos de testes
+htmlcov/
+.coverage
+coverage.xml
+.cache/
+.pytest_cache/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Arquivos do sistema (Windows)
+Thumbs.db
+.DS_Store
+
+postgres_data/
