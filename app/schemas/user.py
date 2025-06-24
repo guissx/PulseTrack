@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from pydantic.config import ConfigDict
+from pydantic import ConfigDict
 
 # Schema para cadastro de usuário
 class UserCreate(BaseModel):
@@ -19,3 +19,8 @@ class UserRead(BaseModel):
     email: EmailStr
 
     model_config = ConfigDict(from_attributes=True)
+
+class UserUpdate(BaseModel):
+    name: str
+    email: EmailStr
+    password: str | None = None

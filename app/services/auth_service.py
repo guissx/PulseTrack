@@ -29,3 +29,7 @@ def autenticar_usuario(form: UserCreate, db: Session) -> dict:
     token = create_access_token({"sub": str(user.id)})
 
     return {"access_token": token, "token_type": "bearer"}
+
+
+
+
